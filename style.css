@@ -19,7 +19,7 @@
 
 main {
     position: relative;
-    top: 10em;
+    top: 10vh;
 }
 
 footer {
@@ -41,18 +41,32 @@ footer {
 }
 
 .display {
-    width: 100%;
-    height: 150px;
     background-color: rgb(249, 249, 249);
     margin-bottom: 1em;
     border: 2px solid black;
 
-    border-radius: 0.5em;
+    border-radius: 0.2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1em;
+    padding: 1em;
+}
+
+.prev-entry {
+    color: #575757;
+    font-size: 1.25rem;
+}
+
+.entry {
+    font-size: 2rem;
 }
 
 button {
     border: 2px solid black;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
     padding-block: 1em;
     font-size: 1.25rem;
 }
